@@ -1,0 +1,24 @@
+2026-10-26T11:02:08+01:00
+Linux 6.6.87.2-microsoft-standard-WSL2
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Architecture:                         x86_64
+CPU(s):                               12
+Model name:                           13th Gen Intel(R) Core(TM) i7-1355U
+NUMA node0 CPU(s):                    0-11
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       1.7Gi       193Mi        51Mi       5.6Gi       5.6Gi
+Swap:          2.0Gi       2.0Mi       2.0Gi
+Docker Engine: 29.4.0
+Docker Compose version v5.1.1
+Docker CPUs: 12 | Memory bytes: 8131919872

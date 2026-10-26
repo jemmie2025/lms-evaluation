@@ -1,0 +1,6 @@
+Container | Recorded entries | Peak CPU (%) | Peak RAM (MiB)
+learnhouse-app-2a291fc8 | 118 | 23.50 | 528.40
+learnhouse-db-2a291fc8 | 118 | 19.04 | 80.36
+learnhouse-nginx-2a291fc8 | 118 | 6.38 | 10.80
+learnhouse-redis-2a291fc8 | 118 | 8.74 | 3.64
+learnhouse-ssr-fwd-2a291fc8 | 118 | 0.77 | 1.31

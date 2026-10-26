@@ -1,0 +1,6 @@
+NAME                          CPU %     MEM USAGE / LIMIT
+learnhouse-nginx-2a291fc8     0.00%     10.77MiB / 7.573GiB
+learnhouse-ssr-fwd-2a291fc8   0.00%     836KiB / 7.573GiB
+learnhouse-app-2a291fc8       1.00%     525.9MiB / 7.573GiB
+learnhouse-db-2a291fc8        0.01%     63.36MiB / 7.573GiB
+learnhouse-redis-2a291fc8     0.26%     3.383MiB / 7.573GiB

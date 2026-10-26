@@ -1,0 +1,4 @@
+NAME                     CPU %     MEM USAGE / LIMIT
+lms_moodle-webserver-1   0.01%     184.8MiB / 7.573GiB
+lms_moodle-db-1          0.00%     66.26MiB / 7.573GiB
+lms_moodle-mailpit-1     0.00%     8.379MiB / 7.573GiB

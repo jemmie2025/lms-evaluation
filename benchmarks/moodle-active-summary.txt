@@ -1,0 +1,5 @@
+Container | Samples | Peak CPU (%) | Peak RAM (MiB)
+[Hlms_moodle-webserver-1 | 1 | 0.75 | 184.80
+[J[Hlms_moodle-webserver-1 | 117 | 0.75 | 184.80
+lms_moodle-db-1 | 118 | 0.88 | 66.50
+lms_moodle-mailpit-1 | 118 | 0.97 | 8.38
