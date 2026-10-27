@@ -26,6 +26,22 @@ The Moodle Docker stack used here is intended for development and testing. It is
 
 xAPI event export does not establish support for launching xAPI or cmi5 course packages. Standards and API integrations were researched, not tested in this PoC.
 
+
+## xAPI and cmi5 Clarification
+
+| Platform | xAPI | cmi5 |
+|---|---|---|
+| Moodle | Available through third-party integrations; not tested locally | Advertised through the third-party SCORM Cloud plugin; requires an external service and was not tested |
+| LearnHouse Community | Not confirmed in the official documentation reviewed | Not confirmed in the official documentation reviewed |
+| Open edX | Selected events can be exported as xAPI statements through event-routing-backends and an LRS integration | Package launch support not verified |
+| Canvas LMS | Limited xAPI callbacks from LTI tools record activity time and page views | Package launch support not verified |
+
+Event reporting does not establish full xAPI package playback or cmi5 compliance. Unverified capabilities must not be treated as confirmed support or confirmed absence.
+
+Sources:
+- [Moodle SCORM Cloud integration](https://moodle.org/plugins/mod_scormcloud)
+- [Open edX xAPI events](https://docs.openedx.org/en/latest/developers/references/internal_data_formats/xapi_events.html)
+- [Canvas xAPI callbacks](https://developerdocs.instructure.com/services/canvas/external-tools/file.xapi)
 ## Authentication
 
 | Platform | Documented integration options |
@@ -36,6 +52,7 @@ xAPI event export does not establish support for launching xAPI or cmi5 course p
 | Canvas LMS | SAML, OpenID Connect, LDAP and other authentication providers |
 
 Only local account login was validated during testing.
+
 
 ## Measured Local Results
 
@@ -55,10 +72,19 @@ Full measurements are available in [benchmarks](../benchmarks/).
 
 ## Evaluation Limits
 
-- End-to-end setup duration was not reliably measured; only setup start timestamps were retained.
+- - Full first-time setup duration was not measured for either platform; Moodle has a scoped deployment-readiness measurement.
 - Open edX and Canvas were not deployed or benchmarked locally.
 - Backup restoration, concurrent-user load, SSO and standards packages were not tested.
 - Container restart persistence was verified; this is not a backup-recovery test.
+
+## Deployment Timing
+
+| Platform | Measured duration | Scope |
+|---|---:|---|
+| Moodle | 290 seconds (4 minutes, 50 seconds) | Separate fresh-database deployment using existing source and configuration; timer ended after installation and a successful login-page HTTP response |
+| LearnHouse | Not measured | Original setup duration was not reliably captured |
+
+Moodle administrator login was verified separately after timing. The measurement excludes source download, manual configuration and browser validation, so it is not a full first-time setup duration.
 
 ## Official References
 

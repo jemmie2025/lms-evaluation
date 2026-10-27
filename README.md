@@ -52,6 +52,8 @@ Active resource usage was recorded during 60-second periods of manual learner ac
 - LearnHouse used CLI 1.5.1 and application image 1.4.2, with PostgreSQL, Redis, nginx and SSR forwarding.
 - LearnHouse required separate publication of the course and lesson.
 - Both platforms retained saved course content after container restarts.
+- A separate Moodle fresh-database deployment reached installation and HTTP readiness in 290 seconds (4 minutes, 50 seconds), using existing source and configuration. Administrator login was verified afterward.
+- Database, content and configuration backups were created for both platforms and stored outside Git.
 
 ## Evidence
 
@@ -71,6 +73,7 @@ Active resource usage was recorded during 60-second periods of manual learner ac
 
 - Open edX and Canvas were researched but not deployed locally.
 - Standards packages, SSO, API integrations and backup restoration were not tested.
-- End-to-end setup duration was not reliably measured.
+-
 - Restart persistence does not establish backup recoverability.
 - The local PoCs are not production-ready deployments.
+- Full first-time setup duration remains unmeasured. Moodle has a scoped deployment-readiness measurement; LearnHouse deployment timing remains outstanding.

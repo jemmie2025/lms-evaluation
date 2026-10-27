@@ -1,0 +1,12 @@
+Backup date: 2026-10-27
+
+Moodle: database, moodledata, source and deployment configuration saved.
+LearnHouse: database, uploaded content and installation configuration saved.
+
+Backup location: ~/lms-backups/ (outside the Git repository).
+Method: application writes stopped while database and files were copied.
+Database format: PostgreSQL custom-format dump.
+
+Backup creation: completed for both platforms.
+Restore validation: not performed.
+These local backups do not provide off-device disaster recovery.
