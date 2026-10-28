@@ -1,0 +1,33 @@
+LearnHouse 1.4.2 deployment-readiness measurement
+Excludes configuration generation and manual login.
+2026-10-28T13:04:18+01:00
+ Container learnhouse-redis-8c999180 Running
+ Container learnhouse-db-8c999180 Running
+ Container learnhouse-app-8c999180 Running
+ Container learnhouse-redis-8c999180 Waiting
+ Container learnhouse-db-8c999180 Waiting
+ Container learnhouse-db-8c999180 Healthy
+ Container learnhouse-redis-8c999180 Healthy
+ Container learnhouse-app-8c999180 Waiting
+ Container learnhouse-app-8c999180 Waiting
+ Container learnhouse-app-8c999180 Healthy
+ Container learnhouse-ssr-fwd-8c999180 Starting
+ Container learnhouse-app-8c999180 Healthy
+ Container learnhouse-nginx-8c999180 Starting
+ Container learnhouse-ssr-fwd-8c999180 Started
+ Container learnhouse-nginx-8c999180 Started
+ Container learnhouse-redis-8c999180 Waiting
+ Container learnhouse-app-8c999180 Waiting
+ Container learnhouse-nginx-8c999180 Waiting
+ Container learnhouse-ssr-fwd-8c999180 Waiting
+ Container learnhouse-db-8c999180 Waiting
+ Container learnhouse-app-8c999180 Healthy
+ Container learnhouse-ssr-fwd-8c999180 Healthy
+ Container learnhouse-redis-8c999180 Healthy
+ Container learnhouse-db-8c999180 Healthy
+ Container learnhouse-nginx-8c999180 Healthy
+Deployment duration: 40 seconds
+2026-10-28T13:04:58+01:00
+Result: services ready; login page returned HTTP 200.
+
+Manual administrator login: verified after timing; excluded from the 40-second measurement.

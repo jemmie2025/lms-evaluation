@@ -76,4 +76,4 @@ Active resource usage was recorded during 60-second periods of manual learner ac
 -
 - Restart persistence does not establish backup recoverability.
 - The local PoCs are not production-ready deployments.
-- Full first-time setup duration remains unmeasured. Moodle has a scoped deployment-readiness measurement; LearnHouse deployment timing remains outstanding.
+- Full first-time setup duration was not measured. Scoped readiness measurements were 290 seconds for Moodle and 40 seconds for LearnHouse 1.4.2; administrator login was verified afterward for both.
