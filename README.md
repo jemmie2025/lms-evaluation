@@ -69,6 +69,20 @@ Active resource usage was recorded during 60-second periods of manual learner ac
 
 ![LearnHouse learner completing the course](evidence/learnhouse-learner-completion.png)
 
+
+## Initial Security Assessment
+
+The local Moodle webserver image was scanned with Trivy. The report
+recorded 13 critical and 361 high package-level findings; their
+applicability requires further review.
+
+See the [security assessment](docs/security-review.md) for findings,
+available fix information and limitations, and the
+[scan report](benchmarks/security/moodle-image-trivy.txt) for evidence.
+
+No fixes or post-remediation scans have been performed. This assessment
+does not establish production readiness.
+
 ## Evaluation Limits
 
 - Open edX and Canvas were researched but not deployed locally.
