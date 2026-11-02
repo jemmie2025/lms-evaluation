@@ -86,7 +86,7 @@ does not establish production readiness.
 ## Evaluation Limits
 
 - Open edX and Canvas were researched but not deployed locally.
-- Standards packages, SSO, API integrations and backup restoration were not tested.
+- Standards packages, SSO and API integrations were not tested. Moodle backup restoration and completion recovery were verified locally on 2 November 2026; LearnHouse restoration remains untested. See the [Moodle restore runbook](docs/moodle-restore-runbook.md).
 -
 - Restart persistence does not establish backup recoverability.
 - The local PoCs are not production-ready deployments.

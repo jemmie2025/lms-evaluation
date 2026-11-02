@@ -1,6 +1,6 @@
 ## Backup and Recovery
 
-Backups were created successfully on **27 October 2026** and stored privately in `~/lms-backups/`, outside Git. LearnHouse returned to a healthy state afterward. Restoration has not been tested.
+Backups were created successfully on **27 October 2026** and stored privately in `~/lms-backups/`, outside Git. LearnHouse returned to a healthy state afterward. Moodle restoration was verified in isolated local stacks on **2 November 2026**, including preservation of a newly created learner completion timestamp through a second restore. See the [Moodle restore runbook](moodle-restore-runbook.md). LearnHouse restoration remains untested.
 
 | Platform | Saved components |
 |---|---|
