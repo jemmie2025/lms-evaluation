@@ -1,0 +1,5 @@
+ username  | shortname | timecompleted | matches_before_backup
+-----------+-----------+---------------+-----------------------
+ learner01 | DEVOPS101 |    1793611726 | t
+ admin     | DEVOPS101 |    1793614799 | f
+(2 rows)
