@@ -29,9 +29,20 @@ Both local platforms delivered **DevOps Fundamentals**, containing an **Introduc
 |---|---|---|
 | Deployment and administrator login | Passed | Passed |
 | Course creation and learner access | Passed | Passed |
-| Learner course completion | Not tested | Passed |
+| Learner course completion | Passed in recovery stack using administrator impersonation | Passed |
 | Course content retained after restart | Passed | Passed |
 | Completion retained after restart | Not tested | Passed |
+
+## SSO and Licence Comparison
+
+These are documented capabilities; SSO was not configured or tested locally.
+
+| Area | Moodle | LearnHouse Community / Enterprise |
+|---|---|---|
+| SSO | OAuth 2 and LDAP; SAML 2 through an additional authentication plugin. Keycloak SAML is a proposed pilot integration requiring compatibility and login testing. | Custom OIDC and WorkOS SAML/OIDC are documented Enterprise features; not enabled in the Community PoC. |
+| Licence | GPL-3.0-or-later | Community: AGPL-3.0; Enterprise features: separate commercial licence |
+
+Sources: [Moodle licence](https://github.com/moodle/moodle/blob/main/composer.json), [Moodle SAML plugin](https://github.com/catalyst/moodle-auth_saml2), [LearnHouse licence](https://github.com/learnhouse/learnhouse), [LearnHouse Enterprise](https://docs.learnhouse.app/enterprise).
 
 ## Test Environment
 
@@ -87,7 +98,6 @@ does not establish production readiness.
 
 - Open edX and Canvas were researched but not deployed locally.
 - Standards packages, SSO and API integrations were not tested. Moodle backup restoration and completion recovery were verified locally on 2 November 2026; LearnHouse restoration remains untested. See the [Moodle restore runbook](docs/moodle-restore-runbook.md).
--
 - Restart persistence does not establish backup recoverability.
 - The local PoCs are not production-ready deployments.
 - Full first-time setup duration was not measured. Scoped readiness measurements were 290 seconds for Moodle and 40 seconds for LearnHouse 1.4.2; administrator login was verified afterward for both.
