@@ -6,7 +6,7 @@ Moodle and LearnHouse Community were tested locally. Open edX and Canvas were as
 
 ## Recommendation
 
-**Moodle is recommended for the next-stage pilot**, based on its native SCORM 1.2 support, established plugin ecosystem and lower observed idle memory usage.
+**Moodle is recommended for the next-stage pilot**, based on its native SCORM 1.2 support and established plugin ecosystem. The recommendation remains subject to pilot-plan approval and security review; comparative memory efficiency has not been established under controlled conditions.
 
 LearnHouse is an alternative for straightforward course delivery and a modern interface. Its documented SCORM support requires Enterprise.
 
@@ -50,12 +50,14 @@ Windows 11 · WSL2 Ubuntu 22.04.5 · Intel Core i7-1355U
 12 logical CPUs · Approximately 7.6 GiB Docker memory
 Docker Engine 29.4.0 · Docker Compose plugin v5.1.1 (reported by `docker compose version`)
 
-| Platform | Local URL | Total idle container RAM |
+| Platform | Local URL | Preliminary idle container RAM |
 |---|---|---:|
 | Moodle | http://localhost:8000 | ~259 MiB |
 | LearnHouse Community | http://localhost:8080 | ~604 MiB |
 
 Active resource usage was recorded during 60-second periods of manual learner activity. These single-user observations are not production sizing recommendations or concurrent-load benchmarks. Other applications were running on the host.
+
+**Measurement limitation:** The ~259 MiB and ~604 MiB figures are preliminary observations from a shared host, not a controlled comparison. A rerun with unrelated applications closed remains outstanding because important host applications could not be interrupted. These figures do not establish comparative memory efficiency or production sizing.
 
 ## Deployment Findings
 

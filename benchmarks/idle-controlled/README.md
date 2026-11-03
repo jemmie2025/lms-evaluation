@@ -19,3 +19,15 @@ Display frames may repeat underlying statistics and are not independent
 samples. Files contain no sample timestamps. Platform uptime and cache
 conditions differed. These observations do not establish production
 capacity or replace the earlier measurements with a controlled comparison.
+
+## Follow-up status — 3 November 2026
+
+The controlled idle comparison remains outstanding. Important host
+applications could not be interrupted. The initial 259/604 MiB figures
+remain preliminary and are not used to establish comparative memory
+efficiency in the recommendation.
+
+A future rerun must verify application readiness, use the same host
+conditions and a consistent warm-up period, and collect timestamped
+samples over equal measurement windows. Record container identities,
+image versions and background workloads for each run.
