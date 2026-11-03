@@ -1,1 +1,5 @@
+Verified at: 2026-11-03 11:10:23 UTC
+Environment: WSL Ubuntu
 Docker Compose version v5.1.1
+5.1.1
+/usr/bin/docker
