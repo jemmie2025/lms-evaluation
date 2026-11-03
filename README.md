@@ -31,7 +31,7 @@ Both local platforms delivered **DevOps Fundamentals**, containing an **Introduc
 | Course creation and learner access | Passed | Passed |
 | Learner course completion | Passed in recovery stack using administrator impersonation | Passed |
 | Course content retained after restart | Passed | Passed |
-| Completion retained after restart | Not tested | Passed |
+| Completion retained after restart | Passed in recovery stack; database record verified | Passed |
 
 ## SSO and Licence Comparison
 
