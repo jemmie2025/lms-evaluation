@@ -1,0 +1,3 @@
+services:
+  webserver:
+    image: sha256:ee3c5b60cf00b8dd5958c470abd28afd7d27a39eb3967760a763dbe3db8fa1c3
