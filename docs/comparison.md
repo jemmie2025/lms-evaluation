@@ -54,7 +54,7 @@ Tests ran on Windows 11 with WSL2 Ubuntu 22.04.5, an Intel Core i7-1355U, 12 log
 
 | Metric | Moodle | LearnHouse 1.4.2 |
 |---|---:|---:|
-| Preliminary idle container RAM | ~259 MiB | ~604 MiB |
+| Mean total idle container RAM | 94.92 MiB | 520.89 MiB |
 | Application container peak RAM | 184.80 MiB | 528.40 MiB |
 | Application container peak CPU | 0.75% | 23.50% |
 | Database container peak RAM | 66.50 MiB | 80.36 MiB |
@@ -62,9 +62,9 @@ Tests ran on Windows 11 with WSL2 Ubuntu 22.04.5, an Intel Core i7-1355U, 12 log
 
 Active measurements came from 60-second recordings during manual learner activity. Per-container peaks may occur at different times and must not be added together as a simultaneous system peak.
 
-These single-user observations do not establish production capacity or comparative throughput. Other applications were running on the host, and learner actions were not automated.
+These single-user observations do not establish production capacity or comparative throughput. Other applications were running during these earlier active measurements, and learner actions were not automated.
 
-**Measurement limitation:** The ~259 MiB and ~604 MiB figures are preliminary observations from a shared host, not a controlled comparison. A rerun with unrelated applications closed remains outstanding because important host applications could not be interrupted. These figures do not establish comparative memory efficiency or production sizing.
+**Idle rerun — 3 November 2026:** Unrelated desktop applications were closed, with Docker Desktop and VS Code retained. Each platform ran separately after readiness checks and a 60-second warm-up, followed by three 60-second recordings. Moodle included three containers; LearnHouse included five. Values are averages of the three run means. Memory increased across runs, so cache state and short recording duration remain limitations. These results do not establish production capacity or comparative throughput. See the [method and raw recordings](../benchmarks/idle-rerun-20261103T135724Z/README.md).
 
 See [benchmark records](../benchmarks/) for raw measurements and summaries.
 

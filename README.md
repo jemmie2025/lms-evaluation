@@ -50,14 +50,14 @@ Windows 11 · WSL2 Ubuntu 22.04.5 · Intel Core i7-1355U
 12 logical CPUs · Approximately 7.6 GiB Docker memory
 Docker Engine 29.4.0 · Docker Compose plugin v5.1.1 (reported by `docker compose version`)
 
-| Platform | Local URL | Preliminary idle container RAM |
+| Platform | Local URL | Mean total idle container RAM |
 |---|---|---:|
-| Moodle | http://localhost:8000 | ~259 MiB |
-| LearnHouse Community | http://localhost:8080 | ~604 MiB |
+| Moodle | http://localhost:8000 | 94.92 MiB |
+| LearnHouse Community | http://localhost:8080 | 520.89 MiB |
 
-Active resource usage was recorded during 60-second periods of manual learner activity. These single-user observations are not production sizing recommendations or concurrent-load benchmarks. Other applications were running on the host.
+Active resource usage was recorded during 60-second periods of manual learner activity. These single-user observations are not production sizing recommendations or concurrent-load benchmarks. Other applications were running during the earlier active measurements.
 
-**Measurement limitation:** The ~259 MiB and ~604 MiB figures are preliminary observations from a shared host, not a controlled comparison. A rerun with unrelated applications closed remains outstanding because important host applications could not be interrupted. These figures do not establish comparative memory efficiency or production sizing.
+**Idle rerun — 3 November 2026:** Unrelated desktop applications were closed, with Docker Desktop and VS Code retained. Each platform ran separately after readiness checks and a 60-second warm-up, followed by three 60-second recordings. Moodle included three containers; LearnHouse included five. Values are averages of the three run means. Memory increased across runs, so cache state and short recording duration remain limitations. These results do not establish production capacity or comparative throughput. See the [method and raw recordings](benchmarks/idle-rerun-20261103T135724Z/README.md).
 
 ## Deployment Findings
 
