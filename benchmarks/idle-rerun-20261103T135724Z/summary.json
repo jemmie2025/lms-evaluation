@@ -34,5 +34,14 @@
     "min_combined_mib": 461.90084375000004,
     "max_combined_mib": 524.6298125,
     "ready_utc": "2026-11-03T14:02:56.833179+00:00"
+  },
+  {
+    "platform": "learnhouse",
+    "run": 2,
+    "samples": 12,
+    "mean_combined_mib": 526.5974140625,
+    "min_combined_mib": 524.99684375,
+    "max_combined_mib": 527.95084375,
+    "ready_utc": "2026-11-03T14:02:56.833179+00:00"
   }
 ]
