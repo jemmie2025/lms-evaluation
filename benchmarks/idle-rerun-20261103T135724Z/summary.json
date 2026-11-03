@@ -7,5 +7,14 @@
     "min_combined_mib": 89.947,
     "max_combined_mib": 89.947,
     "ready_utc": "2026-11-03T13:58:16.849056+00:00"
+  },
+  {
+    "platform": "moodle",
+    "run": 2,
+    "samples": 12,
+    "mean_combined_mib": 96.667,
+    "min_combined_mib": 96.667,
+    "max_combined_mib": 96.667,
+    "ready_utc": "2026-11-03T13:58:16.849056+00:00"
   }
 ]
