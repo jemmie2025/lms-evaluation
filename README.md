@@ -44,6 +44,8 @@ These are documented capabilities; SSO was not configured or tested locally.
 
 Sources: [Moodle licence](https://github.com/moodle/moodle/blob/main/composer.json), [Moodle SAML plugin](https://github.com/catalyst/moodle-auth_saml2), [LearnHouse licence](https://github.com/learnhouse/learnhouse), [LearnHouse Enterprise](https://docs.learnhouse.app/enterprise).
 
+**Moodle security candidate:** Basic functional checks passed for HTTP readiness, authenticated course and lesson access, and retention of the existing learner completion record. Independent learner login and creation of a new completion record were not tested in this check. See the [functional verification report](benchmarks/security/remediation/functional/README.md).
+
 ## Test Environment
 
 Windows 11 · WSL2 Ubuntu 22.04.5 · Intel Core i7-1355U
