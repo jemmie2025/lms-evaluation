@@ -48,7 +48,7 @@ Sources: [Moodle licence](https://github.com/moodle/moodle/blob/main/composer.js
 
 Windows 11 · WSL2 Ubuntu 22.04.5 · Intel Core i7-1355U
 12 logical CPUs · Approximately 7.6 GiB Docker memory
-Docker Engine 29.4.0 · Docker Compose 5.1.1
+Docker Engine 29.4.0 · Docker Compose plugin v5.1.1 (reported by `docker compose version`)
 
 | Platform | Local URL | Total idle container RAM |
 |---|---|---:|
