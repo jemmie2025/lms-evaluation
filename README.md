@@ -101,3 +101,9 @@ does not establish production readiness.
 - Restart persistence does not establish backup recoverability.
 - The local PoCs are not production-ready deployments.
 - Full first-time setup duration was not measured. Scoped readiness measurements were 290 seconds for Moodle and 40 seconds for LearnHouse 1.4.2; administrator login was verified afterward for both.
+
+## Review Documents
+
+- [Security decision summary](docs/security-summary.md): triage outcomes, priorities and remaining investigations.
+- [Pilot plan](docs/pilot-plan.md): proposed scope and operating requirements, awaiting Friendy's agreement before provisioning.
+- [Idle measurement follow-up](benchmarks/idle-controlled/README.md): recording limitations and exclusion of the latest Moodle results.
