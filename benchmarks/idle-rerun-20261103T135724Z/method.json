@@ -1,0 +1,184 @@
+{
+  "created_utc": "2026-11-03T13:57:37.753181+00:00",
+  "host_condition": "Operator confirmed unrelated desktop applications closed; Docker Desktop and VS Code retained. Normal system services remain.",
+  "method": "One platform at a time; HTTP readiness and available health checks; 60-second warm-up; three 60-second windows; samples scheduled every 5 seconds using docker stats --no-stream. Sample timestamps and collection durations retained. No user browsing during recordings.",
+  "scope": "Original Moodle image versus LearnHouse 1.4.2; security candidate excluded.",
+  "containers": [
+    {
+      "name": "lms_moodle-db-1",
+      "image_reference": "postgres:17",
+      "image_id": "sha256:b8faeff7712663c2773a190181e1246e37e364b887611c04658c28b44e2408fe",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "lms_moodle-mailpit-1",
+      "image_reference": "axllent/mailpit:v1.10",
+      "image_id": "sha256:105bcbd657cc2af01132504d74849545e6e778a4e79990c0f1e6f58455369394",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "lms_moodle-webserver-1",
+      "image_reference": "moodlehq/moodle-php-apache:8.3",
+      "image_id": "sha256:1db7b6ed013fcb5268095b5e28c410ba9117d38d9b6a324c100c48fcbe69745e",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-db-2a291fc8",
+      "image_reference": "pgvector/pgvector:pg16",
+      "image_id": "sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-redis-2a291fc8",
+      "image_reference": "redis:7.2.3-alpine",
+      "image_id": "sha256:090276da2603db19b154602c374f505d94c10ea57e9749fc3e68e955284bf0fd",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-app-2a291fc8",
+      "image_reference": "ghcr.io/learnhouse/app:1.4.2",
+      "image_id": "sha256:fbb8e10659d0726c8736360d0e63c13bedc398dd3a7a9c13cb312675d5b73380",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-nginx-2a291fc8",
+      "image_reference": "nginx:alpine",
+      "image_id": "sha256:a3554c0d0b48177b1413c26e01f695334428020d9df01243fbae3e11cfd17417",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-ssr-fwd-2a291fc8",
+      "image_reference": "alpine/socat:1.8.0.0",
+      "image_id": "sha256:a6be4c0262b339c53ddad723cdd178a1a13271e1137c65e27f90a08c16de02b8",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-db-8c999180",
+      "image_reference": "pgvector/pgvector:pg16",
+      "image_id": "sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-redis-8c999180",
+      "image_reference": "redis:7.2.3-alpine",
+      "image_id": "sha256:090276da2603db19b154602c374f505d94c10ea57e9749fc3e68e955284bf0fd",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-app-8c999180",
+      "image_reference": "ghcr.io/learnhouse/app:1.4.2",
+      "image_id": "sha256:fbb8e10659d0726c8736360d0e63c13bedc398dd3a7a9c13cb312675d5b73380",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-nginx-8c999180",
+      "image_reference": "nginx:alpine",
+      "image_id": "sha256:a3554c0d0b48177b1413c26e01f695334428020d9df01243fbae3e11cfd17417",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "learnhouse-ssr-fwd-8c999180",
+      "image_reference": "alpine/socat:1.8.0.0",
+      "image_id": "sha256:a6be4c0262b339c53ddad723cdd178a1a13271e1137c65e27f90a08c16de02b8",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "moodle_verify_1793613396928832852-db-1",
+      "image_reference": "sha256:b8faeff7712663c2773a190181e1246e37e364b887611c04658c28b44e2408fe",
+      "image_id": "sha256:b8faeff7712663c2773a190181e1246e37e364b887611c04658c28b44e2408fe",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "moodle_verify_1793613396928832852-webserver-1",
+      "image_reference": "sha256:ee3c5b60cf00b8dd5958c470abd28afd7d27a39eb3967760a763dbe3db8fa1c3",
+      "image_id": "sha256:ee3c5b60cf00b8dd5958c470abd28afd7d27a39eb3967760a763dbe3db8fa1c3",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "moodle_restore_1793607674-db-1",
+      "image_reference": "sha256:b8faeff7712663c2773a190181e1246e37e364b887611c04658c28b44e2408fe",
+      "image_id": "sha256:b8faeff7712663c2773a190181e1246e37e364b887611c04658c28b44e2408fe",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "lms_moodle_timing_20261027113503-db-1",
+      "image_reference": "postgres:17",
+      "image_id": "sha256:b8faeff7712663c2773a190181e1246e37e364b887611c04658c28b44e2408fe",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "lms_moodle_timing_20261027113503-mailpit-1",
+      "image_reference": "axllent/mailpit:v1.10",
+      "image_id": "sha256:105bcbd657cc2af01132504d74849545e6e778a4e79990c0f1e6f58455369394",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "lms_moodle_timing_20261027113503-webserver-1",
+      "image_reference": "moodlehq/moodle-php-apache:8.3",
+      "image_id": "sha256:1db7b6ed013fcb5268095b5e28c410ba9117d38d9b6a324c100c48fcbe69745e",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "n8n-latest-postgres",
+      "image_reference": "postgres:16-alpine",
+      "image_id": "sha256:cf78e76683b9ca8c5733cbbdce6c9262b45b6767934dd0a95e671f9a0fc20685",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "n8n-latest-app",
+      "image_reference": "docker.n8n.io/n8nio/n8n:2.38.7",
+      "image_id": "sha256:a8c95f75c6fdf65f5f2b7a7b354744eaa1c62bb911b5c00af6499c3f38e4cd32",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    },
+    {
+      "name": "mattermost-intern-automation-postgres-1",
+      "image_reference": "postgres:16.15-alpine",
+      "image_id": "sha256:cf78e76683b9ca8c5733cbbdce6c9262b45b6767934dd0a95e671f9a0fc20685",
+      "memory_limit": 0,
+      "nano_cpus": 0,
+      "restart_count": 0
+    }
+  ]
+}
