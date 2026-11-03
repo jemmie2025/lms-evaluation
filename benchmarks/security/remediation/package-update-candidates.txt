@@ -1,0 +1,43 @@
+libbrotli1:
+  Installed: 1.0.9-2+b6
+  Candidate: 1.0.9-2+deb12u1
+  Version table:
+     1.0.9-2+deb12u1 500
+        500 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages
+ *** 1.0.9-2+b6 500
+        500 http://deb.debian.org/debian bookworm/main amd64 Packages
+        100 /var/lib/dpkg/status
+libexpat1:
+  Installed: 2.5.0-1+deb12u4
+  Candidate: 2.5.0-1+deb12u5
+  Version table:
+     2.5.0-1+deb12u5 500
+        500 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages
+ *** 2.5.0-1+deb12u4 100
+        100 /var/lib/dpkg/status
+     2.5.0-1+deb12u2 500
+        500 http://deb.debian.org/debian bookworm/main amd64 Packages
+libssl3:
+  Installed: 3.0.22-1~deb12u1
+  Candidate: 3.0.22-1~deb12u2
+  Version table:
+     3.0.22-1~deb12u2 500
+        500 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages
+ *** 3.0.22-1~deb12u1 100
+        100 /var/lib/dpkg/status
+     3.0.20-1~deb12u2 500
+        500 http://deb.debian.org/debian bookworm/main amd64 Packages
+     3.0.17-1~deb12u2 500
+        500 http://deb.debian.org/debian bookworm-updates/main amd64 Packages
+openssl:
+  Installed: 3.0.22-1~deb12u1
+  Candidate: 3.0.22-1~deb12u2
+  Version table:
+     3.0.22-1~deb12u2 500
+        500 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages
+ *** 3.0.22-1~deb12u1 100
+        100 /var/lib/dpkg/status
+     3.0.20-1~deb12u2 500
+        500 http://deb.debian.org/debian bookworm/main amd64 Packages
+     3.0.17-1~deb12u2 500
+        500 http://deb.debian.org/debian bookworm-updates/main amd64 Packages
