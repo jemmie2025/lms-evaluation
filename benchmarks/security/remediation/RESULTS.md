@@ -31,7 +31,7 @@ The earlier total of 374 came from a previous scan. Its difference
 from the fresh baseline of 348 is not credited to these updates.
 
 ## Outstanding Work
-- Test Moodle login, course access and completion with the candidate.
+- Basic candidate verification passed; see functional/README.md. Independent learner login and new completion testing remain open.
 - Review remaining findings and document justified deferrals,
   required controls and unresolved exposure.
 - Obtain security review and pilot-plan approval before provisioning.
